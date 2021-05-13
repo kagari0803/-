@@ -1,29 +1,14 @@
-
 body{
- background: #E8CBC0;
+  background: #E8CBC0;
   background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
   background: linear-gradient(to right, #636FA4, #E8CBC0);
   font-family:'Josefin','Microsoft JhengHei'; 
 }
 .outside{
-  margin-top:70px;
-  margin-bottom:70px;
+  margin-top:100px;
+  margin-bottom:100px;
 }
-h3{
-  font-family:'Bitter';
-  font-weight:580;
-}
-.biglogo{
-  animation-duration: 1.5s;
-  animation-name:  pulse;
-  animation-iteration-count: infinite;
-}
-.the{
-  font-size:small;
-}
-.the:hover{
-  color:#D2143A;
-}
+
 a{
   color:black;
 }
@@ -46,30 +31,26 @@ img{
 img:hover{
   filter: grayscale(0%);
 }
-video{
-  filter: grayscale(100%);
-}
-video:hover{
-  filter: grayscale(0%);
-}
-.col-sm-12{
-  margin:10px;
+
+.profilepic{
+  position:relative;
 }
 
 .stickerimg{
-  position:relative;
   width:250px;
   height:250px;
   padding:30px;
+  display:block;
 }
-.name{
+
+.sign{
   position:absolute;
   left:30px;
   top:150px;
   line-height: 18px;
   font-family:'Nothing You Could Do'; 
 }
-.name:hover{
+.sign:hover{
   color:#D2143A;
 }
 
@@ -77,77 +58,18 @@ video:hover{
   font-size:small;
 }
 
-.progress-bar{
-  background-color:#272727;
-}
-.progress{
-    height:30px;
-    margin:10px;
-    font-size:small;
-}
-.progress-bar:hover{
-  background-color:#345FDF;
-}
-.workimg{
-  width:100%;
-  height:auto;
-}
-
 .odd{
     background-color:#DCDCDC;
+    padding:30px;
 }
 .even{
   background-color:#D3D3D3;
+  padding:30px;
 }
 
-.intro{
-  position:relative;
-  
-}
-.intro1{
-  position:absolute;
-  padding-bottom:30px;
-  bottom:0px;
-  left:0px;
-  text-align:center;
-}
-
-
-.timeline{
-list-style-type: none;
-border-top: 1px solid black;
-padding: 0px;
-}
-
-li {
-float: left;
-position: relative;
-text-align: center;
-width: 25%;
-}
-
-.timeline li b:before {
-position: absolute;
-top: -5px;
-left: 45%;
-border: 3px solid ;
-content: '';
-border-radius: 50%;
-background-color:black;
-width: 10px;
-height: 10px;
-}
-
-.bar{
-  padding:20px;
-}
-
-#demo{
-  text-align:center;
-}
 .footer{
   text-align:center;
-   font-size:smaller;
+  font-size:smaller;
 }
 
 .swing{
@@ -156,30 +78,44 @@ height: 10px;
   animation-iteration-count:1;
 }
 .fadeinleft{
-   animation-duration: 3s;
+  animation-duration: 3s;
   animation-name: fadeInLeft;
   animation-iteration-count:1;
 }
-.flip{
-  animation-duration: 4s;
-  animation-name:  flipInX;
-  animation-iteration-count: 1;
+
+.name{
+  font-weight:650;
+  font-size:x-large;
 }
-h3:hover{
+
+h2{
+  font-family:'Bitter';
+  font-weight:580;
+  font-size:x-large;
+  margin:20px;
+}
+
+h2:hover{
   color:#D2143A;
   transition: 1s;
 }
 
-.hinge{
-   animation-duration: 3s;
-  animation-name:  hinge;
-  animation-iteration-count: infinite;
+h3{
+  font-family:'Bitter';
+  font-weight:580;
+  font-size: large;
+  margin-bottom:0px;
 }
 
-.time{
-  animation-delay:3s;
-  animation-duration: 2s;
-  animation-name:  slideInDown;
-  animation-iteration-count: 1;
-  margin-top:20px;
+h4,h5{
+  font-weight: bold;
+}
+
+.icon{
+  margin:5px;
+}
+
+li{
+  list-style-type: none;
+  margin:10px;
 }
