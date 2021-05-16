@@ -54,9 +54,6 @@ img:hover{
   color:#D2143A;
 }
 
-.eng{
-  font-size:small;
-}
 
 .odd{
     background-color:#DCDCDC;
@@ -81,6 +78,15 @@ img:hover{
   animation-duration: 3s;
   animation-name: fadeInLeft;
   animation-iteration-count:1;
+}
+
+#language{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
 }
 
 .name{

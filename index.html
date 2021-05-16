@@ -12,47 +12,46 @@
   </head>
   <body>
 
-      <!--button
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-sm-2 col-md-1">
-          <button type="button" class="btn btn-light">Lang</button>
-        </div>
-      </div>
-    </div>-->
-
     <script>
-      function loadJSON() {
-        var xhttp = new XMLHttpRequest();
+      let count = 0;
+
+      function readJSON() {
+        let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            displayData(this);
+            displayData(this)
           }
         };
         xhttp.open("GET", "data.json", true);
         xhttp.send();
       }
+
       function displayData(xhttp) {
-        jsonData = JSON.parse(xhttp.responseText);
-        var newContent = "" 
-        for (index in jsonData) {
-          newContent += "<p>" + jsonData[index].body + "</p>";
+        let jsonData = JSON.parse(xhttp.responseText);
+        for (let key in jsonData) {
+          for (let i in jsonData[key]){
+            document.getElementById(i).innerHTML = jsonData[count][i].replace(/\n/g,"<br>");
+          }
         }
-        document.getElementById("json-content").innerHTML = newContent;
+        if (count==0){
+          count++;
+        }else{
+          count=0;
+        }
+
       }
-      function clearJSON() {
-        document.getElementById("json-content").innerHTML = "";
+      window.onload=function(){
+        readJSON();
       }
+
       </script>
+
     </head>
   
     <body>
-      <h2>AJAX DEMO</h2>
-      <button type="button" onclick="loadJSON()">Get JSON</button>
-      <button type="button" onclick="clearJSON()">Clear JSON</button>
-      <div id="json-content"></div>
-    </div>
 
+
+      <button type="button" class="btn btn-light" onclick="readJSON()" id="language">繁體中文</button>
 
     <div class="container-fluid outside">
 
@@ -64,7 +63,7 @@
               <div class="profilepic">
                 <img src="img/sticker.jpg"  class="offset-md-4 stickerimg swing sticker">
                 <div class="sign fadeinleft">
-                  <span style="font-size:38px;">Chien Yu Ting</span><br>
+                  <span style="font-size:38px;">Ariel Chien</span><br>
                   <span style="font-size:14px;">Yesterday is history.Tomorrow is mystery</span>
                 </div>
               </div>
@@ -72,8 +71,8 @@
             <div class="col" style="display: flex"> 
               <div class="intro align-self-center">
                 <p>
-                  <span class="name">簡鈺庭/Ariel Chien</span><br><br>
-                  <span>中原資管四年級</span><br>
+                  <span class="name" id="myName">簡鈺庭</span><br><br>
+                  <span id="grade">中原大學資訊管理四年級</span><br>
                   <span>Tel: 0903778431</span><br>
                 </p>
                 <a class="icon" href="https://www.facebook.com/profile.php?id=100005352617514"><i class="fab fa-facebook-square mr-md-3 fa-2x icon"></i></a>
@@ -93,14 +92,11 @@
                 <h2 class="caption">Education</h2>
               </div>
               <div class="col-sm-12 col-md-8">
-                <h3>桃園市立桃園高級中等學校<h3>
-                <span class="eng">Taoyuan Municipal Taoyuan Senior High school</span><br>
+                <h3 id="highSchool">桃園市立桃園高級中等學校<h3>
                 <span class="time">2014~2017</span><hr>
-                <h3>中原大學－應用華語文學系<h3>
-                <span class="eng">Chung Yuan Christian University Department of Teaching Chinese as a Second Language</span><br>
+                <h3 id="university_1">中原大學－應用華語文學系<h3>
                 <span class="time">2017~2019</span><hr>
-                <h3>中原大學－資訊管理學系<h3>
-                <span class="eng">Chung Yuan Christian University Department of Information Management</span><br>
+                <h3 id="university_2">中原大學－資訊管理學系<h3>
                 <span class="time">2019~2021</span>
               </div>
             </div>
@@ -115,14 +111,15 @@
                 <h2 class="caption">Experience</h2>
               </div>
               <div class="col-sm-12 col-md-8">
-                <h5>台灣微軟股份有限公司 (Microsoft) | 行政助理實習生</h5>
+                <h5 id="experience_title_1">台灣微軟股份有限公司 (Microsoft) | 行政助理實習生</h5>
                 <p>2020/6~2021/3</p>
-                <p>使用Excel樞紐分析表、VLOOKUP等功能，對銷售資料進行數據分析<br>
+                <p id="experience_content_1">
+                  使用Excel樞紐分析表、VLOOKUP等功能，對銷售資料進行數據分析<br>
                   並自學VBA自動化工作流程，增進工作效率<br>
                   支援公司各項活動、研討會</p>
-                <h5>教育部數位學伴計畫 | 教學老師</h5>
+                <h5 id="experience_title_2">教育部數位學伴計畫 | 教學老師</h5>
                 <p>2018/10~2020/12</p>
-                <p>透過線上學習平台，以視訊的方式輔導、陪伴偏鄉小朋友<br>
+                <p id="experience_content_2">透過線上學習平台，以視訊的方式輔導、陪伴偏鄉小朋友<br>
                   從備課、製作教材到課後輔導都是自己一手包辦<br>
                   負責科目有數學、國文、英文，學生年齡國小至國中都有帶過<br>
                   此計畫不只讓我學習如何和孩子溝通，更培養我的耐心與同理心</p>
@@ -139,18 +136,18 @@
               <h2 class="caption">SKILLS</h2>
             </div>
             <div class="col-sm-12 col-md-8">
-              <h4>語文能力</h4><hr>
-              <h5>英文</h5>
-              <p>聽：精通  說：中等  讀：精通  寫：中等<br>
+              <h4 id="languageSkills">語文能力</h4><hr>
+              <h5 id="english">英文</h5>
+              <p id="languageSkills_english">聽：精通  說：中等  讀：精通  寫：中等<br>
               <span>TOEIC (多益測驗) 905分</span></p>
-              <h5>台語</h5>
-              <p>中等</p>
-              <h4>網頁前端</h4><hr>
-              <p>熟悉 HTML5、 CSS3、Javascript、Bootstrap4<br>
+              <h5 id="taiwanese">台語</h5>
+              <p id="languageSkills_taiwanese">聽：中等  說：中等  讀：中等  寫：中等</p>
+              <h4 id="frontEnd">網頁前端</h4><hr>
+              <p id="frontEndSkills">熟悉 HTML5、 CSS3、Javascript、Bootstrap4<br>
                 略懂Vue.js<br>
                 可獨立切版、完成RWD網頁</p>
-              <h4>文書軟體</h4><hr>
-              <p>熟悉Microsoft 365產品（Word、PowerPoint、Excel、Outlook、Teams、OneDrive
+              <h4 id="office">文書軟體</h4><hr>
+              <p id="officeSkills">熟悉Microsoft 365（Word、PowerPoint、Excel、Outlook、Teams、OneDrive
                 ）與OneNote、Power  BI<br>
                 可熟練使用Excel樞紐分析表、vlookup進行數據分析</p>
  
