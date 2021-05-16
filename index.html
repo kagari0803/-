@@ -21,6 +21,39 @@
       </div>
     </div>-->
 
+    <script>
+      function loadJSON() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            displayData(this);
+          }
+        };
+        xhttp.open("GET", "data.json", true);
+        xhttp.send();
+      }
+      function displayData(xhttp) {
+        jsonData = JSON.parse(xhttp.responseText);
+        var newContent = "" 
+        for (index in jsonData) {
+          newContent += "<p>" + jsonData[index].body + "</p>";
+        }
+        document.getElementById("json-content").innerHTML = newContent;
+      }
+      function clearJSON() {
+        document.getElementById("json-content").innerHTML = "";
+      }
+      </script>
+    </head>
+  
+    <body>
+      <h2>AJAX DEMO</h2>
+      <button type="button" onclick="loadJSON()">Get JSON</button>
+      <button type="button" onclick="clearJSON()">Clear JSON</button>
+      <div id="json-content"></div>
+    </div>
+
+
     <div class="container-fluid outside">
 
       <!--資料-->
@@ -41,7 +74,7 @@
                 <p>
                   <span class="name">簡鈺庭/Ariel Chien</span><br><br>
                   <span>中原資管四年級</span><br>
-                  <span>Tel:0903778431</span><br>
+                  <span>Tel: 0903778431</span><br>
                 </p>
                 <a class="icon" href="https://www.facebook.com/profile.php?id=100005352617514"><i class="fab fa-facebook-square mr-md-3 fa-2x icon"></i></a>
                 <a class="icon" href="https://github.com/kagari0803"><i class="fab fa-github mr-md-3 fa-2x icon"></i></a>
