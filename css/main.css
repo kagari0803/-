@@ -27,20 +27,34 @@ p:hover{
 
 
 .profilepic{
-  position:relative;
+  position: relative;
+  text-align: right;
+}
+
+.pro2{
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .stickerimg{
-  width:250px;
-  height:250px;
-  padding:30px;
-  display:block;
+  min-width:300px;
+  min-height:300px;
+  max-width:350px;
+  max-height:350px;
+  width:50%;
+  height:50%;
+  margin-right:40px;
+}
+
+.intro {
+  margin-top:100px;
 }
 
 .sign{
-  position:absolute;
-  left:30px;
-  top:150px;
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
   line-height: 18px;
   font-family:'Nothing You Could Do'; 
 }
