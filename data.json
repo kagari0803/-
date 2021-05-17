@@ -18,7 +18,12 @@
       "frontEnd":"網頁前端",
       "frontEndSkills":"熟悉 HTML5、 CSS3、Javascript、Bootstrap\n略懂Vue.js\n可獨立切版、完成RWD網頁",
       "office":"文書軟體",
-      "officeSkills":"熟悉Microsoft 365（Word、PowerPoint、Excel、Outlook、Teams、OneDrive）\n與OneNote、Power  BI\n可熟練使用Excel樞紐分析表、vlookup進行數據分析"
+      "officeSkills":"熟悉Microsoft 365（Word、PowerPoint、Excel、Outlook、Teams、OneDrive）\n與OneNote、Power  BI\n可熟練使用Excel樞紐分析表、vlookup進行數據分析",
+      "autobiography":"　　我原為應⽤華語⽂學系的學⽣，⼆年級選修資訊管理學系的課程後，對程式設計很感興趣，希望更深入學習，並將學到的技能實際應用、解決問題，故毅然決然轉系。雖然⼤三才成為資訊管理學系的⼀員，但我用短短兩年就修完系上課程，在學期間也透過Microsoft Professional Program進修，學習python與基礎資料科學。\n\n　　我在程式撰寫⽅⾯資歷不深，但我對⾃⼰的學習能⼒有信⼼，可以很快學會新的知識，也有獨立的⾃學能⼒。 2020年六月時，用短短兩個禮拜的時間從零開始學Excel，最後順利通過面試，成為第17屆微軟行政助理實習生，錄取後也自學VBA，用巨集將工作流程自動化、增進工作效率。\n\n　　在學期間我曾寫過前、後端網頁與Android app，對前端較感興趣，我喜歡做切版、畫面呈現。我了解前端是一個技術變化相當快速的領域，必須不停進修、學習，自己的能力也有不足之處，但我有良好的問題解決能力，懂得與團隊合作，且學習速度快，我相信自己能快速上手新知，並抱有持續學習的熱誠。希望能成為前端工程師並實際參與專案，加深經驗。",
+      "micCamp_title":"2020決策未來產業分析研習營 佳作",
+      "micCamp_content":"2020寒假參與資策會所辦的產業分析營隊，和來自全台各大學、素昧平⽣的夥伴⼀起腦⼒激盪、解決難題。我們原本不被看好，但因為結訓報告選題創新，且團隊向⼼⼒強、溝通良好，最後在20組優秀的團隊中脫穎⽽出，拿下佳作。",
+      "codingAngles_title":"台灣微軟 2020 Coding Angels科技女力工作坊 公關&助教",
+      "codingAngles_content":"在微軟實習期間我參與了Coding Angels專案，此為專為資訊相關背景的女性大專院校學生所設計的職涯分享會與工作坊。身為公關的我除了負責宣傳活動、擔任公司與參加者的溝通橋樑外，也在Hands-On工作坊擔任助教，協助參加者解決Azure服務的技術問題"
     },
     {
       "language":"English",
@@ -39,7 +44,11 @@
       "frontEnd":"Front End",
       "frontEndSkills":"Familiar with HTML5, CSS3, Javascript、Bootstrap5\nKnow some Vue.js\nI can run with projects on my own but also enjoy working collaboratively",
       "office":"Word Processing",
-      "officeSkills":"Familiar with Microsoft 365（Word, PowerPoint, Excel, Outlook, Teams, OneDrive）and OneNote, Power BI\nProficient in using Excel pivot tables and VLOOKUP for data analysis"
-
+      "officeSkills":"Familiar with Microsoft 365（Word, PowerPoint, Excel, Outlook, Teams, OneDrive）and OneNote, Power BI\nProficient in using Excel pivot tables and VLOOKUP for data analysis",
+      "autobiography":"　　我原為應⽤華語⽂學系的學⽣，⼆年級選修資訊管理學系的課程後，對程式設計很感興趣，希望更深入學習，並將學到的技能實際應用、解決問題，故毅然決然轉系。雖然⼤三才成為資訊管理學系的⼀員，但我用短短兩年就修完系上課程，在學期間也透過Microsoft Professional Program進修，學習python與基礎資料科學。\n\n　　我在程式撰寫⽅⾯資歷不深，但我對⾃⼰的學習能⼒有信⼼，可以很快學會新的知識，也有獨立的⾃學能⼒。 2020年六月時，用短短兩個禮拜的時間從零開始學Excel，最後順利通過面試，成為第17屆微軟行政助理實習生，錄取後也自學VBA，用巨集將工作流程自動化、增進工作效率。\n\n　　在學期間我曾寫過前、後端網頁與Android app，對前端較感興趣，我喜歡做切版、畫面呈現。我了解前端是一個技術變化相當快速的領域，必須不停進修、學習，自己的能力也有不足之處，但我有良好的問題解決能力，懂得與團隊合作，且學習速度快，我相信自己能快速上手新知，並抱有持續學習的熱誠。希望能成為前端工程師並實際參與專案，加深經驗。",
+      "micCamp_title":"2020決策未來產業分析研習營 佳作",
+      "micCamp_content":"2020寒假參與資策會所辦的產業分析營隊，和來自全台各大學、素昧平⽣的夥伴⼀起腦⼒激盪、解決難題\n我們原本不被看好，但因為結訓報告選題創新，且團隊向⼼⼒強、溝通良好，最後在20組優秀的團隊中脫穎⽽出，拿下佳作。",
+      "codingAngles_title":"台灣微軟 2020 Coding Angels科技女力工作坊 公關&助教",
+      "codingAngles_content":"在微軟實習期間我參與了Coding Angels專案，此為專為資訊相關背景的女性大專院校學生所設計的職涯分享會與工作坊。身為公關的我除了負責宣傳活動、擔任公司與參加者的溝通橋樑外，也在Hands-On工作坊擔任助教，協助參加者解決Azure服務的技術問題"
     }
   ]

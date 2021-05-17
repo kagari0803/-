@@ -25,12 +25,6 @@ p:hover{
   color:#D2143A;
 }
 
-img{
-  filter: grayscale(100%);
-}
-img:hover{
-  filter: grayscale(0%);
-}
 
 .profilepic{
   position:relative;
@@ -133,4 +127,12 @@ h4,h5{
 li{
   list-style-type: none;
   margin:10px;
+}
+
+.additional{
+  text-align: center;
+}
+
+.additional_pic{
+  width:100%;
 }
