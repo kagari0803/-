@@ -1,4 +1,4 @@
-# Resume Project
+# My Resume Website
 [Demo Website](https://kagari0803.github.io/resume/)
 
 ## Description
